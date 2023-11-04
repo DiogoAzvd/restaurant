@@ -470,8 +470,8 @@ body {
 }
 
 #hoursAndLocations {
-    width: 70vw;
-    height: 28vw;
+    width: 60vw;
+    height: 20vw;
     box-sizing: border-box;
     position: relative;
     color: #fff;
@@ -481,8 +481,8 @@ body {
 
 #hoursAndLocationsBackground {
     background-color: #111;
-    width: 80%;
-    height: 75%;
+    width: 70%;
+    height: 28vw;
     position: absolute;
     z-index: 0;
 }
@@ -557,8 +557,8 @@ body {
     font-size: clamp(0px, 1.5rem, 2.5vw);
     font-weight: 800;
     position: absolute;
-    top: 5.2vw;
-    right: 10vw;
+    top: 8.5vw;
+    right: 15vw;
     user-select: none;
     width: 4vw;
     height: 4vw;
