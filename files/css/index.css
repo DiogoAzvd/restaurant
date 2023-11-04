@@ -473,7 +473,8 @@ body {
     color: #fff;
     top: 0;
     background-color: #111;
-    z-index: 3000;    
+    z-index: 3000;
+    display: none;    
 }
 
 #hoursAndLocationsTitle {
@@ -678,7 +679,7 @@ body {
 #reservation {
     width: 95%;
     height: 70%;
-    display: none;
+    display: flex;
     align-items: center;
     flex-direction: row;
     position: relative;
