@@ -1,0 +1,28 @@
+Home:
+
+    Navbar -> Home, Hours and Location, Menu, Search, Cart. (Maybe - Reservation, Event, Contact, Social Media).
+
+    Content -> Logo, Sale, Highlights
+
+Hours and Location:
+
+    Open a window in the home page and shows HOURS AND LOCATIONS, dummy!
+
+Menu:
+
+    Categories, Food, Food description, Price, Select/Remove buttons
+
+
+Cart:
+
+    Select/Remove buttons, food, price, text box(In case a person doesn't want X from a food). (Maybe food description)
+
+
+Background prompt: Inside a restaurant, chairs, table, plants decoration, wooden ornaments, at night.
+Filter: Haze.
+Negative prompt: People, round chair.
+
+
+
+
+size, date, time (options), seating options, name, phone, email, request, ocasion
