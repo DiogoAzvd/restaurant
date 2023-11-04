@@ -38,7 +38,7 @@ function animateItem(direction) {
     let item = itemId(0);
     let nextItem;
 
-    let circle = document.getElementById("current_item" + currentItem);
+    let circle = document.getElementById("currentItem" + currentItem);
     let nextCircle;
     
     let title = document.getElementById("salesDescriptionTitle" + currentItem); 
@@ -49,14 +49,14 @@ function animateItem(direction) {
 
     if (direction == "right") {    
         nextItem = itemId(1);
-        nextCircle = document.getElementById("current_item" + ((currentItem + 1) % numberOfItems));
+        nextCircle = document.getElementById("currentItem" + ((currentItem + 1) % numberOfItems));
         nextTitle = document.getElementById("salesDescriptionTitle" + ((currentItem + 1) % numberOfItems));
         nextText = document.getElementById("salesDescriptionText" + ((currentItem + 1) % numberOfItems));
     }
 
     else {
         nextItem = itemId(leftPattern[currentItem] - currentItem);
-        nextCircle = document.getElementById("current_item" + leftPattern[currentItem]);
+        nextCircle = document.getElementById("currentItem" + leftPattern[currentItem]);
         nextTitle = document.getElementById("salesDescriptionTitle" + leftPattern[currentItem]);
         nextText = document.getElementById("salesDescriptionText" + leftPattern[currentItem]);
     }

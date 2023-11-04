@@ -41,6 +41,7 @@ function Navbar() {
 
     function scrollTo(section, offset) {
         const viewHeight = window.innerHeight * section + (window.innerHeight * section * offset);
+
         window.scroll({
             top: viewHeight,
             left: 0,
@@ -54,13 +55,13 @@ function Navbar() {
                 <span onClick={() => {scrollTo(0, 0)}}>Home</span>
                 <span onClick={() => {scrollTo(1, .15)}}>Sales</span>
                 <span onClick={() => {scrollTo(2, .12)}}>Menu</span>
-                <span onClick={() => {showElement("hoursAndLocationsBox")}}>Hours & Locations</span>    
+                <span onClick={() => {showElement("hoursAndLocations")}}>Hours & Locations</span>    
                 <span onClick={() => {showElement("cartBox")}}>Cart</span>
-                <span id="navbarButtonHide" onClick={navbar}>Hide</span>
+                <span id="navbarButtonHide" onClick={navbar}>&#11165;</span>
                 <div id="reservationButton" onClick={() => {scrollTo(3, .11)}}>Reservations</div>
             </div>
 
-            <div id="navbarButtonShow" onClick={navbar}>Show</div>
+            <div id="navbarButtonShow" onClick={navbar}>&#11167;</div>
         </>
     );
 }
@@ -126,14 +127,14 @@ function Sales() {
                 </div>
 
                 <div id="salesNav">
-                    <div id="salesNavLeft">&lt;</div>
+                    <div id="salesNavLeft">&#11164;</div>
 
                     <div id="salesNavItems">
-                        <div id="current_item0"></div>
-                        <div id="current_item1"></div>
+                        <div id="currentItem0"></div>
+                        <div id="currentItem1"></div>
                     </div>
                     
-                    <div id="salesNavRight">&gt;</div>
+                    <div id="salesNavRight">&#11166;</div>
                 </div>
             </div>
         }/>
@@ -150,10 +151,8 @@ function Menu() {
                     <div id="menuInfo">?</div>
 
                     <div id="menuInfoDescription">
-                        <ul>
-                            <li>Hover over an item to see its details</li>
-                            <li>Add an item to the cart by clicking on its price</li>
-                        </ul>
+                        <p>Hover over an item to see its details</p>
+                        <p>Add an item to the cart by clicking on its price</p>                            
                     </div>
                 </div>
 
@@ -281,27 +280,20 @@ function MenuGridItem(data) {
 
 function HoursAndLocations() {
     function hide() {
-        const element = document.getElementById("hoursAndLocationsBox");
+        const element = document.getElementById("hoursAndLocations");
         element.style.display = "none";
     }
 
-    return (
-        <div id="hoursAndLocationsBox">
-            <div id="hoursAndLocations">
-                <div id="hoursAndLocationsTitle">Hours And Locations</div>
+    return (        
+        <div id="hoursAndLocations">
+            <div id="hoursAndLocationsButton" onClick={hide}>&#9587;</div>
 
-                <div id="hoursAndLocationsGrid">
-                    <div>Monday - Friday | 18:00 - 00:00 PM | Any Place</div>
-                    <div>Saturday - Sunday | 18:00 - 22:00 PM | Any Place</div>
-                </div>
+            <div id="hoursAndLocationsTitle">Hours & Locations</div>
 
-                <div id="border"></div>
-                <div id="border1"></div>
-                <div id="border2"></div>
+            <div id="hoursAndLocationsGrid">
+                <div>Moonday - Friday | 6:00PM - 12:00PM | Any Place </div>
+                <div>Saturday - Sunday | 6:00PM - 10:00PM | Any Place </div>
             </div>
-
-            <div id="hoursAndLocationsButton" onClick={hide}>X</div>
-            <div id="hoursAndLocationsBackground"></div>
         </div>
     );
 }
@@ -317,7 +309,7 @@ function Cart() {
             <div id="cart">
                 <div id="cartItemBox">
                     <div id="cartTitle">
-                        <div>Cart - Total: $0</div>
+                        <div>Cart - Total: $0.00</div>
                     </div>
 
                     <div id="cartItem">
@@ -342,7 +334,7 @@ function Cart() {
                         <input type="submit" value={"Submit"}></input>
                     </div>
 
-                    <div id="cartClose" onClick={hide}>X</div>
+                    <div id="cartClose" onClick={hide}>&#9587;</div>
                 </form>
             </div>
         </div>
