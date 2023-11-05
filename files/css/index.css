@@ -905,3 +905,17 @@ body {
     cursor: pointer;
     background-color: #333;
 }
+
+@media (min-height: 800px) {
+    #navbar {
+        height: 9vw;
+    }
+    
+    #navbarButtonShow {
+        height: 4vw;
+    }
+
+    #cartBox {
+        height: 25vw;
+    }
+}
