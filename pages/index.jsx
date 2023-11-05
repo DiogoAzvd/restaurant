@@ -53,15 +53,25 @@ function Navbar() {
         <>
             <div id="navbar">
                 <span onClick={() => {scrollTo(0, 0)}}>Home</span>
+                
                 <span onClick={() => {scrollTo(1, .15)}}>Sales</span>
+
                 <span onClick={() => {scrollTo(2, .12)}}>Menu</span>
-                <span onClick={() => {showElement("hoursAndLocations")}}>Hours & Locations</span>    
+
+                <span onClick={() => {showElement("hoursAndLocations")}}>Hours & Locations</span>  
+
                 <span onClick={() => {showElement("cartBox")}}>Cart</span>
-                <span id="navbarButtonHide" onClick={navbar}>&#11165;</span>
+
+                <div id="navbarButtonHide" onClick={navbar}>
+                    <div className="arrow"></div>
+                </div>
+
                 <div id="reservationButton" onClick={() => {scrollTo(3, .11)}}>Reservations</div>
             </div>
 
-            <div id="navbarButtonShow" onClick={navbar}>&#11167;</div>
+            <div id="navbarButtonShow" onClick={navbar}>
+                <div className="arrow showButton"></div>
+            </div>
         </>
     );
 }
@@ -127,14 +137,18 @@ function Sales() {
                 </div>
 
                 <div id="salesNav">
-                    <div id="salesNavLeft">&#11164;</div>
+                    <div id="salesNavLeft">
+                        <div className="arrow leftButton"></div>
+                    </div>
 
                     <div id="salesNavItems">
                         <div id="currentItem0"></div>
                         <div id="currentItem1"></div>
                     </div>
                     
-                    <div id="salesNavRight">&#11166;</div>
+                    <div id="salesNavRight">
+                        <div className="arrow rightButton"></div>
+                    </div>
                 </div>
             </div>
         }/>

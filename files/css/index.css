@@ -92,8 +92,23 @@ body {
     position: absolute;
     right: 0;
     width: 8vw;
-    text-align: center;
-    font-size: clamp(0px, 1.5rem, 2.5vw);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrow {
+    width: 2vw;
+    height: 1vw;
+    background-color: #999;
+    clip-path: polygon(0% 100%, 50% 0%, 100% 100%, 50% 60%, 0% 100%);
+}
+
+.showButton {
+    background-color: #fff;
+    transform: rotate(180deg);
+    height: .7vw;
+    width: 1.5vw;
 }
 
 /* Logo  */
@@ -260,19 +275,29 @@ body {
 
 #salesNavLeft, #salesNavRight {
     height: 100%;
-    color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: clamp(0px, 1.8rem, 2.5vw);
-    font-weight: 800;
     width: 10vw;
     user-select: none;
 }
 
 #salesNavLeft:hover, #salesNavRight:hover {
     cursor: pointer;
-    color: #555;
+}
+
+.leftButton, .rightButton {
+    background-color: #fff;
+    height: 1.5vw;
+    width: 1.5vw;
+}
+
+.leftButton {
+    transform: rotate(-90deg);
+}
+
+.rightButton {
+    transform: rotate(90deg);
 }
 
 #salesNavItems {
