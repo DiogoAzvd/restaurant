@@ -906,7 +906,7 @@ body {
     background-color: #333;
 }
 
-@media (min-height: 800px) {
+@media (min-width: 900px) and (max-height: 750px)  {
     #navbar {
         height: 9vw;
     }
