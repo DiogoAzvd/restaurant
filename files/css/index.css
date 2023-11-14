@@ -123,7 +123,7 @@ body {
     font-size: 3.5vw;
     font-weight: 1000;
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), 90%, rgba(0, 0, 0, .5), rgba(0, 0, 0, 1)),
-    url("../images/background_4k.png");
+    url("../images/background_4k.jpg");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     gap: 2vw;
@@ -163,7 +163,7 @@ body {
     height: 50vw;
     background-image: linear-gradient(to top, rgba(0, 0, 0, 0), 90%, rgba(0, 0, 0, .5), rgba(0, 0, 0, 1)),
     linear-gradient(to bottom, rgba(0, 0, 0, 0), 90%, rgba(0, 0, 0, .5), rgba(0, 0, 0, 1)),
-    url("../images/background_4k.png");
+    url("../images/background_4k.jpg");
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
@@ -255,7 +255,7 @@ body {
 #salesImage {
     height: 100%;
     width: calc(50% - 7vw);
-    background-image: url("../images/drinks.png");
+    background-image: url("../images/drinks.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     border: .2vw #fff solid;
@@ -883,12 +883,12 @@ body {
   
 #item0 {
     z-index: 1;
-    background-image: url("../images/drinks.png");
+    background-image: url("../images/drinks.jpg");
 }
   
 #item1 {
     z-index: 0;
-    background-image: url("../images/mousse.png");
+    background-image: url("../images/mousse.jpg");
 }
 
 .minus {
